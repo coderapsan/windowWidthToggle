@@ -1,0 +1,10 @@
+body {
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 24px;
+    }
+    .title{
+      background-color: aliceblue;
+      text-align: center;
+
+    }
