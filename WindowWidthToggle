@@ -1,0 +1,19 @@
+import React from 'react';
+
+const WindowToggle=()=>{
+  const [windowWidth, SetWindowWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    window.addEventListener('resize', function () {
+      SetWindowWidth(window.innerWidth);
+    });
+  }, []);
+
+  return (
+    <div>
+      <h1>Window Width: {windowWidth}</h1>
+      <p>Change the width of the browser to see how it changes❤️❤️</p>
+    </div>
+  );
+}
+export default WindowToggle();
